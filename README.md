@@ -108,7 +108,7 @@ The master theorem is used in calculating the time complexity of recurrence rela
 ![Master Theorem](/masterTheorem.png)
 
 ## Fontes de pesquisa e consulta
-[Unicamp Apostila](https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node1.html)<br>
+
 [Programiz](https://www.programiz.com/dsa)<br>
 [Youtube - Anuradha Bhatia](https://youtube.com/playlist?list=PLHQFMjPRZUiLyjUXG-CypQ13xwu4hjN3f&si=okyaupM4Tgb4ycIe)<br>
 [Site - Anuradha Bhatia](https://www.anuradhabhatia.com/)<br>
