@@ -1,125 +1,79 @@
-/* ================================================================== *
- *  PROJETO (PARTE 1)
- *  Estrutura de dados
- *  Bruna Scarpelli - 800435
- *  Gustavo Andreas dos Santos - RA
- *  Letícia Almeida P. de A. Ferreira - 800480
- * ================================================================== */ 
+// Queue implementation in C
 
 #include <stdio.h>
-#include <stdlib.h>
-#include "fila.h" 
+#define SIZE 5 
 
-// Declaração das Funções
-void inicializar(TFila *f)
-{
-  f->inicio = NULL;
-  f->fim = NULL;
-  f->itens = 0; 
-}
+void enQueue(int);
+void deQueue();
+void display();
 
-int vazia(TFila *f)
-{
-  NO *p = f->inicio;
+int items[SIZE], front = -1, rear = -1;
 
-  if(p == NULL)
-  {
-    return 1;
-  }
-  else
-  {
-    return 0;  
+void enQueue(int value) {
+  if (rear == SIZE - 1)
+    printf("\nFila cheia!");
+  else {
+    if (front == -1) // primeiro elemento
+      front = 0;
+    rear++;
+    items[rear] = value;
+    printf("\nElemento inserido: %d", value);
   }
 }
 
-void enfileirar(int dado, TFila *f)
-{
-  NO *p = (NO*) malloc(sizeof(NO));
+void deQueue() {
+  if (front == -1)
+    printf("\nFila vazia!");
+  else {
+    printf("\nElemento removido: %d", items[front]);
+    front++;
+    if (front > rear)
+      front = rear = -1;
+  }
+}
+
+// Function to print the queue
+void display() {
+  if (rear == -1)
+    printf("\nFila vazia!");
+  else {
+    int i;
+    printf("\nElementos na fila:\n");
+    for (i = front; i <= rear; i++)
+      printf("%d  ", items[i]);
+  }
+  printf("\n");
+}
+
+int main() {
+  //deQueue is not possible on empty queue
+  deQueue();
+
+  //enQueue 5 elements
+  enQueue(1);
+  enQueue(2);
+  enQueue(3);
+  enQueue(4);
+  enQueue(5);
+
+  // 6th element can't be added to because the queue is full
+  enQueue(6);
+
+  display();
+
+  //deQueue removes element entered first i.e. 1
+  deQueue();
+
+  //Now we have just 4 elements
+  display();
   
-  if(p == NULL)  
-  {
-    // Erro de alocação
-    return;  
-  }
-  else
-  {
-    // Inicializa Nó
-    p->dado = dado;
-    p->prox = NULL;
+  // Remove todos
+  deQueue();
+  deQueue();
+  deQueue();
+  deQueue();
 
-    // Inserção de elemento
-    if(f->inicio == NULL)
-    {
-      f->inicio = p;
-    }
-    else
-    {
-      f->fim->prox = p;
-    }
+  display();
 
-    f->fim = p;
-  }
-  f->itens++;
-}
-
-int desenfileirar(TFila *f)
-{
-  NO *p = f->inicio;
-  int dado = 0;
-
-  if(p != NULL)
-  {
-    f->inicio = p->prox;
-    p->prox = NULL;
-
-    dado = p->dado;
-    free(p);
-
-    // Fim da fila
-    if(f->inicio == NULL)
-    {
-      f->fim = NULL;
-    }
-  }
-  // else = fila vazia
-  f->itens--;
-  
-  return dado;
-}
-
-void printa(TFila *f)
-{
-  NO *p = f->inicio;
-
-  if(p != NULL)
-  {
-    while (p != NULL)
-    {
-      if(p->prox == NULL)
-      {
-        printf("%d\n", p->dado);
-      }
-      else
-      {
-        printf("%d ", p->dado);
-      }
-      p = p->prox;
-    }
-  }
-  // else = fila vazia
-}
-
-void cheia(TFila *f, int capacidade)
-{
-  if(f->itens == capacidade){
-    printf("cheia\n");
-  }
-  else{
-    printf("incompleta\n");
-  }
-}
-
-int tamanho(TFila *f)
-{
-  return f->itens;
+  return 0;
 }
