@@ -38,3 +38,26 @@ Queue operations work as follows:
 
 Para saber se está removendo o último elemento verificar se `FRONT > REAR`, pois eles são os índices dos elementos.
 
+### Tipos
+A fila tem algumas limitações, como seu tamanho que reduz com as remoções e a inserção limitada, por isso existem alguns tipos de fila:
+
+**Circular**
+
+ O último elemento aponta para o primeiro, traz vantagens no quesito de utilização da memória.
+
+ Applications of Circular Queue
+- CPU scheduling
+- Memory management
+- Traffic Management
+
+**de Prioridade**
+ Cada elemento é relacionado a um valor de prioridade. Se os elementos tiverem o mesmo valor de prioridade, a ordem importa. Portanto, os elementos são removidos considerando as prioridades.
+
+**Deque (Double Ended Queue)**
+Os elementos podem ser removidos do inicio ou do fim.
+
+### Applications of Queue
+- CPU scheduling, Disk Scheduling
+- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
+- Handling of interrupts in real-time systems.
+- Call Center phone systems use Queues to hold people calling them in order.
