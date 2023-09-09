@@ -56,7 +56,7 @@ A fila tem algumas limitações, como seu tamanho que reduz com as remoções e 
  Se os elementos tiverem o mesmo valor de prioridade, a ordem importa.<br>
  Portanto, os elementos são removidos considerando as prioridades.
 
-#### Deque (Double Ended Queue)
+### Deque (Double Ended Queue)
 
 Os elementos podem ser removidos do inicio ou do final da fila.
 
@@ -71,10 +71,12 @@ Os elementos podem ser removidos do inicio ou do final da fila.
 - Tem ponteiros para o ínicio = -1 e fim = 0;
 
 **Operações**
-- Inserir na frente:
+
+Inserir na frente:
 ``` 
     1. Check the position of front
     2. If front < 1, reinitialize front = n-1 (last index).
+    3. 
 ```
 
 ### Aplicações da Fila
