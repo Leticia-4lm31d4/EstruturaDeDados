@@ -51,13 +51,17 @@ A fila tem algumas limitações, como seu tamanho que reduz com as remoções e 
 - Traffic Management
 
 **de Prioridade**
- Cada elemento é relacionado a um valor de prioridade. Se os elementos tiverem o mesmo valor de prioridade, a ordem importa. Portanto, os elementos são removidos considerando as prioridades.
+
+ Cada elemento é relacionado a um valor de prioridade , assim seu "peso". <br>
+ Se os elementos tiverem o mesmo valor de prioridade, a ordem importa.<br>
+ Portanto, os elementos são removidos considerando as prioridades.
 
 **Deque (Double Ended Queue)**
-Os elementos podem ser removidos do inicio ou do fim.
 
-### Applications of Queue
-- CPU scheduling, Disk Scheduling
-- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
-- Handling of interrupts in real-time systems.
-- Call Center phone systems use Queues to hold people calling them in order.
+Os elementos podem ser removidos do inicio ou do final da fila.
+
+### Aplicações da Fila
+- Escalonamento da CPU e Disco;
+- Quando dados são transferidos de modo assíncrono entre dois processos, a fila é usada para sincronizaçãa. Exemplos: IO Buffers, pipes, file IO...
+- Tratamento de interrupções em sistemas de tempo real.
+- Os sistemas telefônicos do Call Center usam Filas para manter as pessoas ligando para eles em ordem.
