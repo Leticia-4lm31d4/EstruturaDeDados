@@ -41,7 +41,7 @@ Para saber se está removendo o último elemento verificar se `FRONT > REAR`, po
 ### Tipos
 A fila tem algumas limitações, como seu tamanho que reduz com as remoções e a inserção limitada, por isso existem alguns tipos de fila:
 
-**Circular**
+#### Circular
 
  O último elemento aponta para o primeiro, traz vantagens no quesito de utilização da memória.
 
@@ -50,15 +50,32 @@ A fila tem algumas limitações, como seu tamanho que reduz com as remoções e 
 - Memory management
 - Traffic Management
 
-**de Prioridade**
+#### de Prioridade
 
  Cada elemento é relacionado a um valor de prioridade , assim seu "peso". <br>
  Se os elementos tiverem o mesmo valor de prioridade, a ordem importa.<br>
  Portanto, os elementos são removidos considerando as prioridades.
 
-**Deque (Double Ended Queue)**
+#### Deque (Double Ended Queue)
 
 Os elementos podem ser removidos do inicio ou do final da fila.
+
+**Tipos**
+- Restrito a Input
+    - Pode inserir em apenas um dos lados, mas pode remover de ambos;
+- Restrito a output
+    - Pode remover apenas de um dos lados, mas inserir por ambos;
+
+**Programando**
+- Tem um tamanho `n`, para controle de `vazia` e `cheia`;
+- Tem ponteiros para o ínicio = -1 e fim = 0;
+
+**Operações**
+- Inserir na frente:
+``` 
+    1. Check the position of front
+    2. If front < 1, reinitialize front = n-1 (last index).
+```
 
 ### Aplicações da Fila
 - Escalonamento da CPU e Disco;
