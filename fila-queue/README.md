@@ -72,11 +72,45 @@ Os elementos podem ser removidos do inicio ou do final da fila.
 
 **Operações**
 
-Inserir na frente:
+Inserir na Frente
 ``` 
     1. Check the position of front
-    2. If front < 1, reinitialize front = n-1 (last index).
-    3. 
+    2. If front < 1, reinitialize front = n-1 (Shift front to the end)
+    3. Else, decrease front by 1
+    4. Add the new key into array[front] => Insert the element at Front
+```
+Inserir no Final
+```
+    1. Verifica se o vetor ta cheio
+    2. Se cheio, reinicializa rear = 0
+    3. Else, rear++ (Increase the rear)
+    4. Add the new key into array[rear] => Insert the element at rear
+```
+Remover da frente
+```
+    1. Verificar se deque ta vazio
+    2. If the deque is empty (front = -1), deletion cannot be performed (underflow condition).
+    3. If the deque has only one element (front = rear), set front = -1 and rear = -1.
+    4. Else if front is at the end (front = n - 1), set go to the front front = 0.
+    5. Else, front = front + 1
+```
+Remover do Final
+```
+    1. Verificar se deque ta vazio
+    2. If the deque is empty (front = -1), deletion cannot be performed (underflow condition).
+    3. If the deque has only one element (front = rear), set front = -1 and rear = -1.
+    4. If rear is at the front (i.e. rear = 0), set go to the front rear = n - 1
+    5. Else, rear = rear - 1
+```
+Verificar se Vazio
+```
+Se front = -1,  deque ta vazio
+```
+Verificar se Cheio
+```
+Se front = 0 AND rear = n-1
+OR front = rear + 1 
+=> Deque vazio
 ```
 
 ### Aplicações da Fila
