@@ -24,12 +24,14 @@ Percorre um vetor de elementos da esquerda para a direita e à medida que avanç
 
 > Um método de ordenação é estável se a ordem relativa dos itens iguais não se altera durante a ordenação.
 
-![exemplo isertion](https://d2m498l008ebpa.cloudfront.net/2016/12/insertion-sort-animation-2-1.gif)
+![exemplo isertion](https://miro.medium.com/v2/resize:fit:1012/1*JP-wURjwf4k23U2G3GNQDw.gif)
+
+[codigo-insertion](/ordenacao-sort/InsertionSort.c)
 
 ### Selection Sort
 Selecionar o menor item e colocar na primeira posição, selecionar o segundo menor item e colocar na segunda posição, segue estes passos até que reste um único elemento.
 
 ![exemplo-selection](https://d2m498l008ebpa.cloudfront.net/2016/12/selection-sort-animation-2-1.gif)
 
-[Codigo-selection](/ordenacao-sort/Selection%20Sort.c)
+[Codigo-selection](/ordenacao-sort/SelectionSort.c)
 
