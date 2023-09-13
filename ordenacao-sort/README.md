@@ -26,3 +26,10 @@ Percorre um vetor de elementos da esquerda para a direita e à medida que avanç
 
 ![exemplo isertion](https://d2m498l008ebpa.cloudfront.net/2016/12/insertion-sort-animation-2-1.gif)
 
+### Selection Sort
+Selecionar o menor item e colocar na primeira posição, selecionar o segundo menor item e colocar na segunda posição, segue estes passos até que reste um único elemento.
+
+![exemplo-selection](https://d2m498l008ebpa.cloudfront.net/2016/12/selection-sort-animation-2-1.gif)
+
+[Codigo-selection](/ordenacao-sort/Selection%20Sort.c)
+
