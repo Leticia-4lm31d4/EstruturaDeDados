@@ -8,7 +8,7 @@ Sua utilização é comum para melhor organização de dados, pois facilita a bu
 ### Algoritmos
 Existem diferentes métodos de ordenar elementos, a seguir estão listados os diferentes tipos do mais simples, ao mais complexo.
 
-Os métodos simples são adequados para pequenos vetores, são programas pequenos e fáceis de entender. Possuem complexidade C(n) = O(n²), ou seja, requerem O(n²) comparações. 
+Os **métodos simples** são adequados para pequenos vetores, são programas pequenos e fáceis de entender. Possuem complexidade C(n) = O(n²), ou seja, requerem O(n²) comparações. 
 
 **Exemplos: Insertion Sort, Selection Sort, Bubble Sort, Comb Sort.**
 
