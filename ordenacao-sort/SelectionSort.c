@@ -3,24 +3,21 @@
 int main()
 {
   // Declaracao das variaveis
-  int i, j, qntd, nums[10000], maior, posicao;
+  int qntd, nums[10000], maior, posicao;
 
   // Entrada
   scanf("%d", &qntd); 
-  for (i = 0; i < qntd; i++)
-  {
+  for (int i = 0; i < qntd; i++) {
     scanf("%d", &nums[i]);
   }
 
   // Selection Sort
   maior = 0, posicao = 0;
 
-  for (j = qntd; j > 0; j--)
-  {
-    for (i = 0; i < j; i++)
-    {
-      if ( nums[i] > nums[j-1]) 
-      {
+  for (int j = qntd; j > 0; j--){
+    for (int i = 0; i < j; i++){
+
+      if ( nums[i] > nums[j-1]){
         /* encontrar o maior numero da sequencia "atual" */
         maior = 0;
         maior = nums[i];
@@ -33,11 +30,16 @@ int main()
         nums[j-1] = maior;
       }      
     }
+    /*
+    for (int i = 0; i < qntd; i++){
+      printf("%d ", nums[i]);
+    }
+    printf("\n maior = %d\n posicao = %d\n", maior, posicao);
+    */
   }
 
   // Saida
-  for (i = 0; i < qntd; i++) 
-  {
+  for (int i = 0; i < qntd; i++){
     printf("%d ", nums[i]);
   }
   printf("\n");

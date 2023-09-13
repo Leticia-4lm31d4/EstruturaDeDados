@@ -31,7 +31,7 @@ Percorre um vetor de elementos da esquerda para a direita e à medida que avanç
 ### Selection Sort
 Selecionar o menor item e colocar na primeira posição, selecionar o segundo menor item e colocar na segunda posição, segue estes passos até que reste um único elemento.
 
-![exemplo-selection](https://d2m498l008ebpa.cloudfront.net/2016/12/selection-sort-animation-2-1.gif)
+![exemplo-selection](https://miro.medium.com/v2/resize:fit:828/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 
 [Codigo-selection](/ordenacao-sort/SelectionSort.c)
 
