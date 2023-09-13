@@ -34,4 +34,5 @@ Selecionar o menor item e colocar na primeira posição, selecionar o segundo me
 ![exemplo-selection](https://miro.medium.com/v2/resize:fit:828/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
 
 [Codigo-selection](/ordenacao-sort/SelectionSort.c)
+```no código disponibilizado, ele encontra o maior da sequencia e verifica quem é o último. logo, pode-se fazer o selection desses dois modos: encontrando os min ou os max```
 
