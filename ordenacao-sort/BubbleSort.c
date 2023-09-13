@@ -1,43 +1,34 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
   // Declaracao das variaveis
-  int i, j, maiorNum, nums[10000], temp;
+  int qntd, nums[10000], temp;
 
   // Entrada
-  scanf("%d", &maiorNum); 
-  for (i = 0; i < maiorNum; i++)
-  {
+  scanf("%d", &qntd); 
+  for (int i = 0; i < qntd; i++) {
     scanf("%d", &nums[i]);
   }
 
-  // Bubble Sort
-  temp = 0;
-
   // Verifica n vezes a sequencia
-  for (j = 0; j < maiorNum-1; j++)
-  {
+  for (int j = 0; j < qntd-1; j++){
     // Verifica 1 vez a sequencia
-    for (i = 0; i < maiorNum-1; i++)
-    {
-      if (nums[i] > nums[i+1])
-      {
+    for (int i = 0; i < qntd-1; i++){
+      // compara com o da direita
+      if (nums[i] > nums[i+1]) {
         temp = nums[i];
-        nums[i] = 0;
         nums[i] = nums[i+1];
-
-        nums[i+1] = 0;
         nums[i+1] = temp;
-
-        temp = 0;
       }
+    }/*
+    for (int i = 0; i < qntd; i++) {
+      printf("%d ", nums[i]);
     }
+    printf("\n");*/
   }
 
   // Saida
-  for (i = 0; i < maiorNum; i++) 
-  {
+  for (int i = 0; i < qntd; i++) {
     printf("%d ", nums[i]);
   }
   printf("\n");
