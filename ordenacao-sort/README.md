@@ -43,3 +43,9 @@ Percorre a sequencia comparando os elementos adjacentes realizando a troca deles
 ![exemplo-bubble](https://miro.medium.com/v2/resize:fit:640/1*7seGXJi3te9beNfpAvFXEQ.gif)
 
 [codigo-bubble](/ordenacao-sort/BubbleSort.c)
+
+### Merge Sort
+
+### Quick Sort
+
+### Heap Sort
