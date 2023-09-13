@@ -10,7 +10,7 @@ Existem diferentes métodos de ordenar elementos, a seguir estão listados os di
 
 Os **métodos simples** são adequados para pequenos vetores, são programas pequenos e fáceis de entender. Possuem complexidade C(n) = O(n²), ou seja, requerem O(n²) comparações. 
 
-**Exemplos: Insertion Sort, Selection Sort, Bubble Sort, Comb Sort.**
+**Exemplos: Insertion Sort, Selection Sort, Bubble Sort.**
 
 Nos algoritmos de ordenação as medidas de complexidade relevantes são:
 
@@ -35,7 +35,7 @@ Selecionar o menor item e colocar na primeira posição, selecionar o segundo me
 
 [Codigo-selection](/ordenacao-sort/SelectionSort.c)
 
-```no código disponibilizado, ele encontra o maior da sequencia e verifica quem é o último. logo, pode-se fazer o selection desses dois modos: encontrando os min ou os max```
+No **código disponibilizado**, ele encontra o maior da sequencia e verifica quem é o último. logo, pode-se fazer o selection desses dois modos: encontrando os min ou os max.
 
 ### Bubble Sort
 Percorre a sequencia comparando os elementos adjacentes realizando a troca deles quando necessário, assim, de dois em dois elementos.
